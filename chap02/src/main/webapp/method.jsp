@@ -14,5 +14,7 @@
 	<form method="post" action="MethodServlet">
 		<input type="submit" value="post 방식으로 호출하기">
 	</form>
+	
+	
 </body>
 </html>

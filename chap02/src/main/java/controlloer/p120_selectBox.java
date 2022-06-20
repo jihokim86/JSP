@@ -10,32 +10,37 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class ParamServlet
+ * Servlet implementation class p120_selectBox
  */
-@WebServlet("/ParamServlet")
-public class ParamServlet extends HttpServlet {
+@WebServlet("/p120_selectBox")
+public class p120_selectBox extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html;charset=UTF-8"); 
+		response.setContentType("text/html; charset=utf-8");
 		PrintWriter out = response.getWriter();
 		
-		String id = request.getParameter("id");
-		int age = Integer.parseInt(request.getParameter("age"));
+		String job = request.getParameter("job");
+		String[] interests = request.getParameterValues("interest");
 		
 		out.print("<html><body>");
-		out.println("당신이 입력한 정보입니다.<br>");
-		out.println("아이디:");
-		out.println(id);
-		out.println("<br>나이");
-		out.println(age);
-		out.println("<br><a href='javascript:history.go(-1)'>다시</a>");
-		out.println("</body></html>");
-		out.close();
+		out.print("당신이 선택한 직업 : ");
+		out.print(job);
+		out.print("<hr>당신이 선택한 관심 분야 :");
+		if(interests == null) {
+			out.print("선택한 항목이 없습니다.");
+		}else {
+			for(String interest : interests) {
+				out.print(interest);
+				out.print(" ");
+			}
+		}
+		out.print("</body></html>");
 		
+		out.close();
 	
 	}
 

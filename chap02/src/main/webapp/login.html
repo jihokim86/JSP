@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인창</title>
+	<script>
+		function frn_validate(){
+		
+			let formlogin = document.formlogin;
+			let user_id = formlogin.user_id.value;
+			let user_pw = formlogin.user_pw.value;
+		
+			//let user_id = document.formlogin.user_id.value
+		
+			if((user_id.length ==0 || user_id =="") ||(user_pw.length ==0 || user_pw =="")){
+				alert("아이디와 비밀번호는 필수 입니다.")
+			}else{
+				formlogin.method = "post";
+				formlogin.action = "login";
+				//formlogin.submit(); //get은 왜 submit이 자동으로 되나??
+			}
+		}
+	</script>
+	
+</head>
+<body>
+	<form name="formlogin">
+		아이디 : <input type="text" name="user_id"><br>
+		비밀번호 : <input type="password" name="user_pw"><br>
+		<input type="button" onclick="frn_validate()" value="로그인">
+		<input type="reset" value="다시 입력">
+		<input type="hidden" name="user_address" value="경기도 안산시">
+	</form>
+	
+</body>
+</html>

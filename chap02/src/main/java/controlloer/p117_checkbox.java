@@ -10,32 +10,33 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class ParamServlet
+ * Servlet implementation class p117_checkbox
  */
-@WebServlet("/ParamServlet")
-public class ParamServlet extends HttpServlet {
+@WebServlet("/p117_checkbox")
+public class p117_checkbox extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html;charset=UTF-8"); 
+		response.setContentType("text/html; charset=utf-8");
 		PrintWriter out = response.getWriter();
-		
-		String id = request.getParameter("id");
-		int age = Integer.parseInt(request.getParameter("age"));
+		String[] items = request.getParameterValues("item"); 
 		
 		out.print("<html><body>");
-		out.println("당신이 입력한 정보입니다.<br>");
-		out.println("아이디:");
-		out.println(id);
-		out.println("<br>나이");
-		out.println(age);
-		out.println("<br><a href='javascript:history.go(-1)'>다시</a>");
-		out.println("</body></html>");
-		out.close();
+		if(items == null) {
+			out.print("선택된 항목이 없습니다.");
+		}else {
+			out.print("당신이 선택한 항목입니다.<hr>");
+			for(String item:items) {
+				out.print(item+" ");
+			}
+		}
 		
+		out.print("<br><a href='javascript:history.go(-1)'>다시</a>");
+		out.print("</body></html>");
+		out.close();
 	
 	}
 
