@@ -60,3 +60,27 @@
 6월 22, 2022 10:30:37.539 [4544:8400:0622/103037.539:ERROR:interface_endpoint_client.cc(665)] Message 0 rejected by interface blink.mojom.WidgetHost
 6월 22, 2022 10:52:11.226 [10244:11332:0622/105211.226:ERROR:device_event_log_impl.cc(214)] [10:52:11.226] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
 6월 22, 2022 10:53:09.110 [10244:12012:0622/105309.109:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+6월 23, 2022 13:24:08.303 NEW SESSION
+6월 23, 2022 13:24:08.303 [4204:2024:0623/132408.302:ERROR:device_event_log_impl.cc(214)] [13:24:08.303] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+6월 23, 2022 13:24:28.639 [13144:13044:0623/132428.639:ERROR:device_event_log_impl.cc(214)] [13:24:28.639] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+6월 23, 2022 13:25:27.960 [452:11592:0623/132527.960:ERROR:device_event_log_impl.cc(214)] [13:25:27.960] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+6월 23, 2022 13:26:54.546 [12752:5360:0623/132654.546:ERROR:device_event_log_impl.cc(214)] [13:26:54.546] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+6월 23, 2022 14:01:50.154 [10288:2308:0623/140150.154:ERROR:device_event_log_impl.cc(214)] [14:01:50.153] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+6월 23, 2022 14:02:48.65 [10288:13264:0623/140248.064:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+6월 23, 2022 14:11:43.29 [5804:7896:0623/141143.028:ERROR:device_event_log_impl.cc(214)] [14:11:43.028] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+6월 23, 2022 14:12:40.923 [5804:2968:0623/141240.922:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+6월 23, 2022 14:19:25.430 [9184:6028:0623/141925.430:ERROR:device_event_log_impl.cc(214)] [14:19:25.430] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+6월 23, 2022 14:20:23.339 [9184:8240:0623/142023.338:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+6월 23, 2022 14:45:20.38 [8700:4460:0623/144520.038:ERROR:device_event_log_impl.cc(214)] [14:45:20.039] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+6월 23, 2022 14:46:17.944 [8700:2308:0623/144617.943:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+6월 23, 2022 14:49:43.286 [9880:5592:0623/144943.285:ERROR:device_event_log_impl.cc(214)] [14:49:43.285] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+6월 23, 2022 14:50:41.192 [9880:5584:0623/145041.190:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+6월 23, 2022 14:52:51.649 [4212:11920:0623/145251.649:ERROR:device_event_log_impl.cc(214)] [14:52:51.650] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+6월 23, 2022 14:53:49.538 [4212:9568:0623/145349.537:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+6월 23, 2022 15:14:35.451 [1204:6852:0623/151435.451:ERROR:device_event_log_impl.cc(214)] [15:14:35.450] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+6월 23, 2022 15:15:33.351 [1204:2652:0623/151533.350:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+6월 23, 2022 15:25:45.383 [8200:6476:0623/152545.383:ERROR:device_event_log_impl.cc(214)] [15:25:45.383] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+6월 23, 2022 15:26:43.396 [8200:9600:0623/152643.395:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+6월 23, 2022 16:30:18.111 [8236:10352:0623/163018.111:ERROR:device_event_log_impl.cc(214)] [16:30:18.112] Bluetooth: bluetooth_adapter_winrt.cc:1074 Getting Default Adapter failed.
+6월 23, 2022 16:31:16.15 [8236:2288:0623/163116.014:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
