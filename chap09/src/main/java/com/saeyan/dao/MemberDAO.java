@@ -1,9 +1,8 @@
 package com.saeyan.dao;
 
-import java.sql.Connection;
+import java.sql.Connection; // 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
@@ -32,7 +31,7 @@ public class MemberDAO {
    // 사용자 인증시 사용하는 메소드
    public int userCheck(String userid, String pwd) {
       int result = -1;
-      String sql = "select pwd from member where userid=?";
+      String sql = "select pwd from member where userid=?"; //pstmt.setString(1, userid);
       Connection conn = null;
       PreparedStatement pstmt = null;
       ResultSet rs = null;
