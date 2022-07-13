@@ -38,7 +38,7 @@
 		<tr>
 			<td colspan="2" align="center">
 				<input type="submit" value="로그아웃"/>&nbsp;&nbsp;
-				<input type="button" value="회원정보변경" onclick="location.href='memberUpdate.do?userid=${loginUser.userid}"/>
+				<input type="button" value="회원정보변경" onclick="location.href='memberUpdate.do?userid=${loginUser.userid}'"/>
 																<!-- 이 경로는 어떻게 된것일까? -->
 			</td>
 		</tr>

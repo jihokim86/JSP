@@ -61,7 +61,7 @@ public class LoginServlet extends HttpServlet {
       MemberDAO mDao = MemberDAO.getInstance();			//MemberDAO(싱글톤)에 접근하기 위해 객체를 생성함
       //new연산자를 사용하지 못하는 이유는 싱글톤이기 때문에~
       //getInstance()에서 미리 생성해놓은 MemberDAO의 참조객체명 getInstance를 리턴하도록 되어 있음~
-      //MemberDAO mDao = getInstance(참조변수) = new MemberDao()
+      //MemberDAO mDao = getInstance(참조변수) = new MemberDao() 
       //결국 new연사자를 미리 사용해놓고(싱글톤) getInstance()로 접근해서 객체를 생성하여 
       //MemberDAO 클래스에 접근하고 함~
       //MemberDAO 클래스에 접근하려고하는 이유는 userCheck()함수를 사용하기 위해서이다
