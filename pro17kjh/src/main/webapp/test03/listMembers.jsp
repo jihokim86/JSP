@@ -57,6 +57,8 @@
 			<td width="7%">이름</td>
 			<td width="7%">이메일</td>
 			<td width="7%">가입일</td>
+			<td width="7%">수정</td>
+			<td width="7%">삭제</td>
 		</tr>
 		
 		<c:choose>

@@ -42,8 +42,12 @@ public class MemberController extends HttpServlet {
 		String nextPage = null;
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
+		
+		
 		String url = request.getRequestURI();
 		String action = request.getPathInfo();
+		
+		
 		System.out.println("url:" + url); //url:/pro17kjh/member/listMembers.do
 		System.out.println("action:" + action); //action:/listMembers.do
 		//getPathInfo() 서블릿에 접근하기 위해 선언한 member뒤의 추가 경로의 정보를 제공한다.
