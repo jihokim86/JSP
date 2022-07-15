@@ -42,23 +42,25 @@ public class BoardController extends HttpServlet {
 		
 		String nextPage;
 		
-		BoardService boardService;
+		BoardService boardService = new BoardService();
 		
 		
 		try {
 			if(action == null) {
 				request.setAttribute("articlesList", boardService.listArticles());
 				nextPage = "/board01/listArticles.jsp";
-			}else if(action.equals("/listArticlees.do")) {
+			}else if(action.equals("/listArticles.do")) {
 				request.setAttribute("articlesList", boardService.listArticles());
 				nextPage = "/board01/listArticles.jsp";
 			}
+			
+			RequestDispatcher dispatcher = request.getRequestDispatcher(nextPage);
+			dispatcher.forward(request, response);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
-		RequestDispatcher dispatcher = request.getRequestDispatcher(nextPage);
-		dispatcher.forward(request, response);
+		
 	}
 
 }

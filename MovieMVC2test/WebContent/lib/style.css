@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a,ul,li {list-style: none;}
+
+.visual img{
+	width: 100%;
+	height: 500px;
+}
+
+.main {
+	margin: 40px 0;
+}
+
+.main h2 {
+	margin: 30px 0;
+	text-align: center;
+}
+
+.unit {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.movieInfoBox {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.movieInfoBox .leftBox, .movieInfoBox .rightBox {
+	width: 50%;
+	padding: 10px;
+}
+
+.movieInfoBox img {
+	width: 100%;
+	box-shadow: 1px 1px 12px rgba(0, 0, 0, .6);
+}
+
+.movieInfoBox .rightBox table, .movieInfoTable {
+	box-shadow: 1px 1px 12px rgba(0, 0, 0, .6) !important;
+	transition: .3s !important;
+	text-align: center !important;
+}
+
+.movieInfoBox .rightBox table tbody tr:hover {
+	background: #1c94ef;
+	cursor: pointer;
+}
+
+.seatBox button {
+	width: 150px;
+	height: 60px;
+	margin: 10px !important;
+}
+
+
+footer {
+	background: #1B1C1D;
+	margin-top: 40px;
+	padding: 40px;
+}

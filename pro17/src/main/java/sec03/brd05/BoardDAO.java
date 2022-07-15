@@ -127,7 +127,7 @@ public class BoardDAO {
 			int parentNO = rs.getInt("parentNO");
 			String title = rs.getString("title");
 			String content = rs.getString("content");
-			String imageFileName = URLEncoder.encode(rs.getString("imageFileName"), "UTF-8"); //ÆÄÀÏÀÌ¸§¿¡ Æ¯¼ö¹®ÀÚ°¡ ÀÖÀ» °æ¿ì ÀÎÄÚµùÇÕ´Ï´Ù.
+			String imageFileName = URLEncoder.encode(rs.getString("imageFileName"), "UTF-8"); //ï¿½ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½ï¿½ï¿½ Æ¯ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Úµï¿½ï¿½Õ´Ï´ï¿½.
 			String id = rs.getString("id");
 			Date writeDate = rs.getDate("writeDate");
 
@@ -155,10 +155,12 @@ public class BoardDAO {
 		try {
 			conn = dataFactory.getConnection();
 			String query = "update t_board  set title=?,content=?";
+			
 			if (imageFileName != null && imageFileName.length() != 0) {
-				query += ",imageFileName=?";
+				query += ",imageFileName=? where articleNO=?";
+			}else {
+				query += " where articleNO=?";
 			}
-			query += " where articleNO=?";
 			
 			System.out.println(query);
 			pstmt = conn.prepareStatement(query);
