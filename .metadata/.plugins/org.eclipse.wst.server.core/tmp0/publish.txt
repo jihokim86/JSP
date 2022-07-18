@@ -1,3 +1,0 @@
-#Tomcat publish data
-#Fri Jul 15 20:55:42 KST 2022
-org.eclipse.jst.jee.server\:MovieMVC2test=C\:\\apache-tomcat-9\\wtpwebapps\\MovieMVC2test

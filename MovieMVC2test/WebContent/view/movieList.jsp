@@ -5,16 +5,6 @@
 <%@ page session="true" %>
 <%@ include file="../header.jsp" %>
 
-<%
-	ArrayList<MovieVO> list = new ArrayList<MovieVO>();
-
-	if(request.getAttribute("movieList") == null) {
-		response.sendRedirect("movieList.do");
-	}else {
-		list = (ArrayList) request.getAttribute("movieList");
-	}
-%>
-
 <div class="ui container">
     <div class="visual">
         <img src="./images/logo.jpg" alt="visualImg">
@@ -25,57 +15,39 @@
 
         <div class="MovieList">
             <div class="ui link cards unit">
-            <%
-				for (MovieVO vo : list) {
-					String cat = "";
-					
-					switch (vo.getCategory()) {
-						case 1 :
-							cat = "액션";
-							break;
-						case 2 :
-							cat = "로맨스";
-							break;
-						case 3 :
-							cat = "코미디";
-							break;
-						case 4 :
-							cat = "스릴러";
-							break;
-						case 5 :
-							cat = "애니메이션";
-							break;
-					}
-			%>
-                <div class="card" onclick="location.href = '/movieInfo.do?movieNo=<%=vo.getMovieNo()%>';">
+            <c:forEach var="list" items="${movieList }">
+            
+                <div class="card" onclick="">
                     <div class="image">
-                        <img src="/images/<%=vo.getImg()%>">
+                        <img src="/images/${list.img }">
                     </div>
 
                     <div class="content">
-                        <div class="header"><%=vo.getMovieName() %></div>
+                        <div class="header">${list.movieNo }</div>
 
                         <div class="meta">
-                            <span class="date"><%=cat %></span>
+                            <span class="date">${list.movieName }</span>
                         </div>
 
                         <div class="description">
-                        	<%=vo.getInfo() %>
+                        	 x
                         </div>
                     </div>
 
                     <div class="extra content">
                         <span class="right floated">
-                       	<%=vo.getRuntime() %>분
+                       		y
                         </span>
 
                         <span>
                             <i class="user icon"></i>
-                            No: <%=vo.getMovieNo() %>
+                            z
                         </span>
                     </div>
                 </div>
-            <% } %>
+                
+            </c:forEach>
+            
             </div>
         </div>
     </div>

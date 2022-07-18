@@ -1,7 +1,9 @@
 <%@page import="vo.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<%
+request.setCharacterEncoding("UTF-8");
+%> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,6 +50,9 @@
   			
   			<div class="item">
   				<a href="/movieList.do?cat_no=5">애니메이션</a>
+  			</div>
+  			<div class="item">
+  				<a href="/view/listArticles.jsp">게시판</a>
   			</div>
 	<c:choose>
 		<c:when test="${userStatus == 1 }">
